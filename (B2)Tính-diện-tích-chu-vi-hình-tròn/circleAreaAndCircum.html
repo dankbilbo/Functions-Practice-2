@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    let pi = 3.14;
+    function calArea(r){
+        return pi * r * r;
+    }
+    function calCir(r){
+        return 2 * pi * r;
+    }
+    let area = calArea(10).toFixed(2);
+    let cir = calCir(10).toFixed(2);
+    alert(`dien tich hinh tron la : ${area}, chu vi hinh tron la : ${cir}`);
+</script>
+</body>
+</html>

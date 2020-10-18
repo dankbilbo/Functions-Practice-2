@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script>
+    function enterNumAndCheck(num){
+        if(num % 1 != 0 || num <= 0){
+            return false;
+        }
+        return true;
+    }
+    let result = enterNumAndCheck(+prompt("enter number"));
+    document.write(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất trong 3 số</title>
+</head>
+<body>
+<script>
+    function enter3NumbersAndFindMin(a, b, c){
+        do{
+            a = +prompt("Nhap a");
+            if(a % 1 != 0){
+                alert("nhap so nguyen");
+            }
+        }while (a % 1 != 0);
+        do{
+            b = +prompt("Nhap b");
+            if(b % 1 != 0){
+                alert("nhap so nguyen");
+            }
+        }while (b % 1 != 0);
+        do{
+            c = +prompt("Nhap c");
+            if(c % 1 != 0){
+                alert("nhap so nguyen");
+            }
+        }while (c % 1 != 0);
+
+        let min = a;
+        if(b < min){
+            min = b;
+        }
+        if(c < min){
+            min = c;
+        }
+        return min;
+    }
+    let min = enter3NumbersAndFindMin();
+    document.write(`${min} la so nho nhat`);
+</script>
+</body>
+</html>

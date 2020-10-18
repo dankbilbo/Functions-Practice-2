@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra kí tự</title>
+</head>
+<body>
+<script>
+    function checkNum(char) {
+        if (char % 1 == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    function checkChar(char) {
+        do {
+            char = prompt("Nhap ki tu");
+            if (char.length <= 1) {
+                return char;
+            }
+        } while (char.length > 1);
+    }
+
+    let result = checkNum(checkChar());
+    alert(result);
+
+</script>
+</body>
+</html>

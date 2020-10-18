@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let arr = [1, 3, 5, 7, 8, 4];
+    console.log(arr);
+    function reverseArray(arr){
+        for(let i = 0; i < arr.length / 2; i++){
+            let temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+        return arr;
+    }
+    let newArr = reverseArray(arr);
+    for(let i = 0; i < newArr.length; i++){
+        document.write(`${newArr[i]} `);
+    }
+</script>
+</body>
+</html>

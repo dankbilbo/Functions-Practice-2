@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kí tự và số lần xuất hiện trong mảng</title>
+</head>
+<body>
+<input id="text" type="text">
+<button id="Add" onclick="addElements()">Add char to array</button>
+<input id="char" type="text">
+<button onclick="alert(checkChar())">Check char</button>
+<p id="array"></p>
+<script>
+    let arr = new Array();
+    function addElements(){
+        let char = document.getElementById("text").value;
+        if(char.length > 1){
+            alert("nhap ki tu");
+            return;
+        }
+        arr.push(char);
+        let str = "";
+        for(let i = 0; i < arr.length; i++){
+            str += arr[i] + " ";
+        }
+        document.getElementById("array").innerHTML = str;
+    }
+
+    function checkChar(char){
+        char = document.getElementById("char").value;
+        if(arr.includes(char) == false){
+            return -1;
+        }
+        let count = 0;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] == char){
+                count++;
+            }
+        }
+        return count;
+    }
+
+</script>
+</body>
+</html>

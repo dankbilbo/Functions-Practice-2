@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi chỗ 2 số</title>
+</head>
+<body>
+<script>
+    function swapNums(a, b){
+        this.a = a;
+        this.b = b;
+        let temp = this.a;
+        this.a = this.b;
+        this.b = temp;
+    }
+    var a = 5;
+    var b = 10;
+    swapNums(a, b);
+    document.write(`a = ${a}, b = ${b}`);
+</script>
+</body>
+</html>
